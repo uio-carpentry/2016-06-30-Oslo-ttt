@@ -2,10 +2,10 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "Software/Data Carpentry Instructor training workshop"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "University of Oslo, Norway (location TBD)"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "Kristine Bonnevies Hus, room 3508, Blindernveien 31, 0851 Oslo. Entrance from Moltke Moes Road"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "no"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "59.939673, 10.723284"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+latlng: "59.938175,	10.722441" # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
 humandate: "June 30 - July 1st, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00-17:00"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-06-30      # use YYYY-MM-DD format like 2015-01-01
@@ -80,6 +80,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <p>
   <strong>Where:</strong>
   {{page.address}}.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
 
